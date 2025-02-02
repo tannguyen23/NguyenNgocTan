@@ -21,15 +21,15 @@ export const ThemeProviderWrapper: React.FC<{ children: React.ReactNode }> = ({ 
     palette: {
       mode,
       primary: {
-        main: "#4caf50", // Xanh lá cây
+        main: "#4caf50", 
       },
       background: {
         default: mode === "dark" ? "#1e1e1e" : "#f5f5f5",
-        paper: mode === "dark" ? "rgba(80, 80, 80, 0.6)" : "#ffffff", // Màu nền có độ trong suốt
+        paper: mode === "dark" ? "rgba(80, 80, 80, 0.6)" : "#ffffff", 
       },
       text: {
         primary: mode === "dark" ? "#ffffff" : "#000000",
-        secondary: mode === "dark" ? "#b3b3b3" : "#4d4d4d", // Màu chữ phụ
+        secondary: mode === "dark" ? "#b3b3b3" : "#4d4d4d",
       },
     },
   });
@@ -44,7 +44,6 @@ export const ThemeProviderWrapper: React.FC<{ children: React.ReactNode }> = ({ 
   );
 };
 
-// Hook để dùng theme trong các component khác
 export const useThemeContext = () => {
   const context = useContext(ThemeContext);
   if (!context) throw new Error("useThemeContext must be used within ThemeProviderWrapper");

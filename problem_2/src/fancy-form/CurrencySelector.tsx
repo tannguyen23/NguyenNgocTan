@@ -7,7 +7,7 @@ interface CurrencySelectorProps {
   value: string;
   onChange: (newCurrency: string) => void;
   options: CurrencyData[];
-  disabledOptions?: string[]; // 🔹 Thêm prop để disable option
+  disabledOptions?: string[]; 
 }
 
 const CurrencySelector: React.FC<CurrencySelectorProps> = ({ label, value, onChange, options, disabledOptions = [] }) => {

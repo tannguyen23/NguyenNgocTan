@@ -19,7 +19,7 @@ const CurrencySwapForm: React.FC = () => {
   const [exchangeRate, setExchangeRate] = useState<number>(1);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const { toggleTheme, mode } = useThemeContext(); // Lấy theme và hàm đổi mode
+  const { toggleTheme, mode } = useThemeContext(); 
 
   useEffect(() => {
     currencyApi
@@ -121,7 +121,7 @@ const CurrencySwapForm: React.FC = () => {
                   value={toCurrency} 
                   onChange={setToCurrency} 
                   options={tokenList} 
-                  disabledOptions={[fromCurrency]} // Disable loại tiền đã chọn ở FromCurrency
+                  disabledOptions={[fromCurrency]}
                 />
               </Box>
             </Box>

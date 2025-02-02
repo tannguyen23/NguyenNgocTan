@@ -9,9 +9,9 @@ interface SnowfallBGProps {
 const SnowfallBG: React.FC<SnowfallBGProps> = ({ snowColor = "#ffffff", snowflakeCount = 50 }) => {
   return (
     <Snowfall
-      color={snowColor} // Màu sắc của tuyết
-      radius={[0.5, 1.2]} // Kích thước của hạt tuyết (từ 0.5px đến 1.2px)
-      snowflakeCount={snowflakeCount} // Số lượng hạt tuyết
+      color={snowColor} 
+      radius={[0.5, 1.2]} 
+      snowflakeCount={snowflakeCount}
     />
   );
 };
